@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/enterencePage">
+
+    <fragment
+        android:id="@+id/enterencePage"
+        android:name="com.necatican.loginpage.EnteranceFragment"
+        android:label="fragment_enterence_page"
+        tools:layout="@layout/fragment_enterance" >
+        <action
+            android:id="@+id/action_enterencePage_to_loginPage"
+            app:destination="@id/loginPage" />
+        <action
+            android:id="@+id/action_enterencePage_to_signUpPage"
+            app:destination="@id/signUpPage" />
+        <action
+            android:id="@+id/action_enterencePage_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.necatican.loginpage.ui.login.LoginFragment"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginPage_to_signUpPage"
+            app:destination="@id/signUpPage" />
+        <action
+            android:id="@+id/action_loginPage_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpPage"
+        android:name="com.necatican.loginpage.ui.login.SignUpFragment"
+        android:label="fragment_sign_up_page"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpPage_to_loginPage"
+            app:destination="@id/loginPage" />
+        <action
+            android:id="@+id/action_signUpPage_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.necatican.loginpage.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileButtonFragment"
+            app:destination="@id/editProfileButtonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chattingFragment"
+        android:name="com.necatican.loginpage.ui.chat.ChattingFragment"
+        android:label="fragment_chatting"
+        tools:layout="@layout/fragment_chatting" />
+    <fragment
+        android:id="@+id/editProfileButtonFragment"
+        android:name="com.necatican.loginpage.ui.profile.EditProfileButtonFragment"
+        android:label="fragment_edit_profile_button"
+        tools:layout="@layout/fragment_edit_profile_button" >
+        <action
+            android:id="@+id/action_editProfileButtonFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.necatican.loginpage.ui.main.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/navigateToMusicPage"
+            app:destination="@id/musicPageFragment" />
+        <action
+            android:id="@+id/navigateToPublishingPage"
+            app:destination="@id/publishingPageFragment" />
+        <action
+            android:id="@+id/navigateToMoviesPage"
+            app:destination="@id/moviesPageFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesPage"
+            app:destination="@id/collectiblesPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postAdFragment"
+        android:name="com.necatican.loginpage.ui.post_ad.PostAdFragment"
+        android:label="fragment_post_ad"
+        tools:layout="@layout/fragment_post_ad" />
+    <fragment
+        android:id="@+id/musicPageFragment"
+        android:name="com.necatican.loginpage.ui.main.musicPageFragment"
+        android:label="fragment_music_page"
+        tools:layout="@layout/fragment_music_page" >
+        <action
+            android:id="@+id/navigateToMusicAlbumPage"
+            app:destination="@id/musicAlbumFragment" />
+        <action
+            android:id="@+id/navigateToMusicInstrumentsPage"
+            app:destination="@id/musicInstrumentsFragment" />
+        <action
+            android:id="@+id/navigateToMusicVinylRecordsPage"
+            app:destination="@id/musicVinylRecordsFragment" />
+        <action
+            android:id="@+id/navigateToMusicAutographsPage"
+            app:destination="@id/musicAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicAlbumFragment"
+        android:name="com.necatican.loginpage.ui.main.music.musicAlbumFragment"
+        android:label="fragment_music_album"
+        tools:layout="@layout/fragment_music_album" >
+        <action
+            android:id="@+id/navigateToMusicInstrumentsPage"
+            app:destination="@id/musicInstrumentsFragment" />
+        <action
+            android:id="@+id/navigateToMusicVinylRecordsPage"
+            app:destination="@id/musicVinylRecordsFragment" />
+        <action
+            android:id="@+id/navigateToMusicAutographsPage"
+            app:destination="@id/musicAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicInstrumentsFragment"
+        android:name="com.necatican.loginpage.ui.main.music.musicInstrumentsFragment"
+        android:label="fragment_music_instruments"
+        tools:layout="@layout/fragment_music_instruments" >
+        <action
+            android:id="@+id/navigateToMusicAlbumPage"
+            app:destination="@id/musicAlbumFragment" />
+        <action
+            android:id="@+id/navigateToMusicVinylRecordsPage"
+            app:destination="@id/musicVinylRecordsFragment" />
+        <action
+            android:id="@+id/navigateToMusicAutographsPage"
+            app:destination="@id/musicAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicVinylRecordsFragment"
+        android:name="com.necatican.loginpage.ui.main.music.musicVinylRecordsFragment"
+        android:label="fragment_music_vinyl_records"
+        tools:layout="@layout/fragment_music_vinyl_records" >
+        <action
+            android:id="@+id/navigateToMusicAlbumPage"
+            app:destination="@id/musicAlbumFragment" />
+        <action
+            android:id="@+id/navigateToMusicInstrumentsPage"
+            app:destination="@id/musicInstrumentsFragment" />
+        <action
+            android:id="@+id/navigateToMusicAutographsPage"
+            app:destination="@id/musicAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicAutographsFragment"
+        android:name="com.necatican.loginpage.ui.main.music.musicAutographsFragment"
+        android:label="fragment_music_autographs"
+        tools:layout="@layout/fragment_music_autographs" >
+        <action
+            android:id="@+id/navigateToMusicAlbumPage"
+            app:destination="@id/musicAlbumFragment" />
+        <action
+            android:id="@+id/navigateToMusicInstrumentsPage"
+            app:destination="@id/musicInstrumentsFragment" />
+        <action
+            android:id="@+id/navigateToMusicVinylRecordsPage"
+            app:destination="@id/musicVinylRecordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishingPageFragment"
+        android:name="com.necatican.loginpage.ui.main.publishingPageFragment"
+        android:label="fragment_publishing_page"
+        tools:layout="@layout/fragment_publishing_page" >
+        <action
+            android:id="@+id/navigateToPublishingBooksMagazinesPage"
+            app:destination="@id/publishingBooksMagazinesFragment" />
+        <action
+            android:id="@+id/navigateToPublishingComicPage"
+            app:destination="@id/publishingComicFragment" />
+        <action
+            android:id="@+id/navigateToPublishingNewspapersPage"
+            app:destination="@id/publishingNewspapersFragment" />
+        <action
+            android:id="@+id/navigateToPublishingAutographsPage"
+            app:destination="@id/publishingAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishingComicFragment"
+        android:name="com.necatican.loginpage.ui.main.publishing.publishingComicFragment"
+        android:label="fragment_publishing_comic"
+        tools:layout="@layout/fragment_publishing_comic" >
+        <action
+            android:id="@+id/navigateToPublishingBooksMagazinesPage"
+            app:destination="@id/publishingBooksMagazinesFragment" />
+        <action
+            android:id="@+id/navigateToPublishingNewspapersPage"
+            app:destination="@id/publishingNewspapersFragment" />
+        <action
+            android:id="@+id/navigateToPublishingAutographsPage"
+            app:destination="@id/publishingAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishingBooksMagazinesFragment"
+        android:name="com.necatican.loginpage.ui.main.publishing.publishingBooksMagazinesFragment"
+        android:label="fragment_publishing_books_magazines"
+        tools:layout="@layout/fragment_publishing_books_magazines" >
+        <action
+            android:id="@+id/navigateToPublishingComicPage"
+            app:destination="@id/publishingComicFragment" />
+        <action
+            android:id="@+id/navigateToPublishingNewspapersPage"
+            app:destination="@id/publishingNewspapersFragment" />
+        <action
+            android:id="@+id/navigateToPublishingAutographsPage"
+            app:destination="@id/publishingAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishingNewspapersFragment"
+        android:name="com.necatican.loginpage.ui.main.publishing.publishingNewspapersFragment"
+        android:label="fragment_publishing_newspapers"
+        tools:layout="@layout/fragment_publishing_newspapers" >
+        <action
+            android:id="@+id/navigateToPublishingBooksMagazinesPage"
+            app:destination="@id/publishingBooksMagazinesFragment" />
+        <action
+            android:id="@+id/navigateToPublishingComicPage"
+            app:destination="@id/publishingComicFragment" />
+        <action
+            android:id="@+id/navigateToPublishingAutographsPage"
+            app:destination="@id/publishingAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publishingAutographsFragment"
+        android:name="com.necatican.loginpage.ui.main.publishing.publishingAutographsFragment"
+        android:label="fragment_publishing_autographs"
+        tools:layout="@layout/fragment_publishing_autographs" >
+        <action
+            android:id="@+id/navigateToPublishingBooksMagazinesPage"
+            app:destination="@id/publishingBooksMagazinesFragment" />
+        <action
+            android:id="@+id/navigateToPublishingComicPage"
+            app:destination="@id/publishingComicFragment" />
+        <action
+            android:id="@+id/navigateToPublishingNewspapersPage"
+            app:destination="@id/publishingNewspapersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesPageFragment"
+        android:name="com.necatican.loginpage.ui.main.moviesPageFragment"
+        android:label="fragment_movies_page"
+        tools:layout="@layout/fragment_movies_page" >
+        <action
+            android:id="@+id/navigateToMoviesSeriesPage"
+            app:destination="@id/moviesSeriesFragment" />
+        <action
+            android:id="@+id/navigateToMoviesFilmReelsPage"
+            app:destination="@id/moviesFilmReelsFragment" />
+        <action
+            android:id="@+id/navigateToMoviesPostersPage"
+            app:destination="@id/moviesPostersFragment" />
+        <action
+            android:id="@+id/navigateToMoviesAutographsPage"
+            app:destination="@id/moviesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesSeriesFragment"
+        android:name="com.necatican.loginpage.ui.main.movies.moviesSeriesFragment"
+        android:label="fragment_movies_series"
+        tools:layout="@layout/fragment_movies_series" >
+        <action
+            android:id="@+id/navigateToMoviesFilmReelsPage"
+            app:destination="@id/moviesFilmReelsFragment" />
+        <action
+            android:id="@+id/navigateToMoviesPostersPage"
+            app:destination="@id/moviesPostersFragment" />
+        <action
+            android:id="@+id/navigateToMoviesAutographsPage"
+            app:destination="@id/moviesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFilmReelsFragment"
+        android:name="com.necatican.loginpage.ui.main.movies.moviesFilmReelsFragment"
+        android:label="fragment_movies_film_reels"
+        tools:layout="@layout/fragment_movies_film_reels" >
+        <action
+            android:id="@+id/navigateToMoviesSeriesPage"
+            app:destination="@id/moviesSeriesFragment" />
+        <action
+            android:id="@+id/navigateToMoviesPostersPage"
+            app:destination="@id/moviesPostersFragment" />
+        <action
+            android:id="@+id/navigateToMoviesAutographsPage"
+            app:destination="@id/moviesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesPostersFragment"
+        android:name="com.necatican.loginpage.ui.main.movies.moviesPostersFragment"
+        android:label="fragment_movies_posters"
+        tools:layout="@layout/fragment_movies_posters" >
+        <action
+            android:id="@+id/navigateToMoviesSeriesPage"
+            app:destination="@id/moviesSeriesFragment" />
+        <action
+            android:id="@+id/navigateToMoviesFilmReelsPage"
+            app:destination="@id/moviesFilmReelsFragment" />
+        <action
+            android:id="@+id/navigateToMoviesAutographsPage"
+            app:destination="@id/moviesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moviesAutographsFragment"
+        android:name="com.necatican.loginpage.ui.main.movies.moviesAutographsFragment"
+        android:label="fragment_movies_autographs"
+        tools:layout="@layout/fragment_movies_autographs" >
+        <action
+            android:id="@+id/navigateToMoviesSeriesPage"
+            app:destination="@id/moviesSeriesFragment" />
+        <action
+            android:id="@+id/navigateToMoviesFilmReelsPage"
+            app:destination="@id/moviesFilmReelsFragment" />
+        <action
+            android:id="@+id/navigateToMoviesPostersPage"
+            app:destination="@id/moviesPostersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectiblesPageFragment"
+        android:name="com.necatican.loginpage.ui.main.collectiblesPageFragment"
+        android:label="fragment_collectibles_page"
+        tools:layout="@layout/fragment_collectibles_page" >
+        <action
+            android:id="@+id/navigateToCollectiblesBoardGamesPage"
+            app:destination="@id/collectiblesBoardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesCardGamesPage"
+            app:destination="@id/collectiblesCardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesLincencedFiguresPage"
+            app:destination="@id/collectiblesLincencedFiguresFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesAutographsPage"
+            app:destination="@id/collectiblesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectiblesBoardGamesFragment"
+        android:name="com.necatican.loginpage.ui.main.collectibles.collectiblesBoardGamesFragment"
+        android:label="fragment_collectibles_board_games"
+        tools:layout="@layout/fragment_collectibles_board_games" >
+        <action
+            android:id="@+id/navigateToCollectiblesCardGamesPage"
+            app:destination="@id/collectiblesCardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesLincencedFiguresPage"
+            app:destination="@id/collectiblesLincencedFiguresFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesAutographsPage"
+            app:destination="@id/collectiblesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectiblesCardGamesFragment"
+        android:name="com.necatican.loginpage.ui.main.collectibles.collectiblesCardGamesFragment"
+        android:label="fragment_collectibles_card_games"
+        tools:layout="@layout/fragment_collectibles_card_games" >
+        <action
+            android:id="@+id/navigateToCollectiblesBoardGamesPage"
+            app:destination="@id/collectiblesBoardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesLincencedFiguresPage"
+            app:destination="@id/collectiblesLincencedFiguresFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesAutographsPage"
+            app:destination="@id/collectiblesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectiblesLincencedFiguresFragment"
+        android:name="com.necatican.loginpage.ui.main.collectibles.collectiblesLincencedFiguresFragment"
+        android:label="fragment_collectibles_lincenced_figures"
+        tools:layout="@layout/fragment_collectibles_lincenced_figures" >
+        <action
+            android:id="@+id/navigateToCollectiblesBoardGamesPage"
+            app:destination="@id/collectiblesBoardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesCardGamesPage"
+            app:destination="@id/collectiblesCardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesAutographsPage"
+            app:destination="@id/collectiblesAutographsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectiblesAutographsFragment"
+        android:name="com.necatican.loginpage.ui.main.collectibles.collectiblesAutographsFragment"
+        android:label="fragment_collectibles_autographs"
+        tools:layout="@layout/fragment_collectibles_autographs" >
+        <action
+            android:id="@+id/navigateToCollectiblesBoardGamesPage"
+            app:destination="@id/collectiblesBoardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesCardGamesPage"
+            app:destination="@id/collectiblesCardGamesFragment" />
+        <action
+            android:id="@+id/navigateToCollectiblesLincencedFiguresPage"
+            app:destination="@id/collectiblesLincencedFiguresFragment" />
+    </fragment>
+</navigation>

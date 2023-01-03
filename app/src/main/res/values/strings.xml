@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">loginpage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="s_gn_up">Sıgn up</string>
+    <string name="log_n">logın</string>
+    <string name="life_is_colletful">Life is colletful</string>
+    <string name="collectful">Collectful</string>
+    <string name="todo27" />
+    <string name="todo28" />
+    <string name="todo26" />
+    <string name="todo25" />
+    <string name="todo" />
+    <string name="life_is_collectful" />
+    <string name="music" />
+    <string name="publishing" />
+    <string name="movies" />
+    <string name="collectibles" />
+    <string name="todo2" />
+    <string name="todo3" />
+    <string name="todo4" />
+    <string name="todo7" />
+    <string name="todo1" />
+    <string name="auction_1_1" />
+    <string name="_2_000_1" />
+    <string name="erkin_koray_tutkusu_1977_original_record" />
+    <string name="auction_1_4" />
+    <string name="_2_000_4" />
+    <string name="michael_jackson_thriller_1982_edition" />
+    <string name="auction_1_5" />
+    <string name="_2_000_5" />
+    <string name="the_lord_of_the_rings_deluxe_pocket_boxed_set" />
+    <string name="todo24" />
+    <string name="home_page_photo">home_page_photo</string>
+</resources>
